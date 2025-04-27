@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add Student</title>
+</head>
+<body>
+
+<h1>Add Student</h1>
+
+<form id="studentForm">
+    Name: <input type="text" id="name" required><br><br>
+    Age: <input type="number" id="age" required min="1"><br><br>
+    <button type="submit">Add Student</button>
+</form>
+
+<br>
+<a href="/students.html">Manage Students</a> |
+<a href="/add_course.html">Add Course</a> |
+<a href="/courses.html">Manage Courses</a>
+
+<script>
+    document.getElementById('studentForm').addEventListener('submit', async (e) => {
+        e.preventDefault();
+        const student = {
+            name: document.getElementById('name').value,
+            age: parseInt(document.getElementById('age').value)
+        };
+
+        await fetch('/students', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(student)
+        });
+
+        alert('Student added!');
+        document.getElementById('studentForm').reset();
+    });
+</script>
+
+</body>
+</html>

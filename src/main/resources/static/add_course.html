@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add Course</title>
+</head>
+<body>
+
+<h1>Add Course</h1>
+
+<form id="courseForm">
+    Title: <input type="text" id="title" required><br><br>
+    Description: <input type="text" id="description" required><br><br>
+    <button type="submit">Add Course</button>
+</form>
+
+<br>
+<a href="/courses.html">Manage Courses</a> |
+<a href="/">Add Student</a>
+
+<script>
+    document.getElementById('courseForm').addEventListener('submit', async (e) => {
+        e.preventDefault();
+        const course = {
+            title: document.getElementById('title').value,
+            description: document.getElementById('description').value
+        };
+
+        await fetch('/courses', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(course)
+        });
+
+        alert('Course added!');
+        document.getElementById('courseForm').reset();
+    });
+</script>
+
+</body>
+</html>

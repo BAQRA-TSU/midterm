@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Manage Courses</title>
+</head>
+<body>
+
+<h1>Courses</h1>
+
+<table border="1" id="coursesTable">
+    <thead>
+    <tr>
+        <th>ID</th>
+        <th>Title</th>
+        <th>Description</th>
+        <th>Actions</th>
+    </tr>
+    </thead>
+    <tbody></tbody>
+</table>
+
+<br>
+<a href="/add_course.html">Add Course</a> |
+<a href="/">Add Student</a>
+
+<script>
+    async function loadCourses() {
+        const response = await fetch('/courses');
+        const courses = await response.json();
+
+        const tableBody = document.getElementById('coursesTable').getElementsByTagName('tbody')[0];
+        tableBody.innerHTML = '';
+
+        courses.forEach(course => {
+            const row = tableBody.insertRow();
+            const cell1 = row.insertCell(0);
+            const cell2 = row.insertCell(1);
+            const cell3 = row.insertCell(2);
+            const cell4 = row.insertCell(3);
+
+            cell1.innerHTML = course.id;
+            cell2.innerHTML = course.title;
+            cell3.innerHTML = course.description;
+            cell4.innerHTML = `
+                <button onclick="deleteCourse(${course.id})">Delete</button>
+                <button onclick="editCourse(${course.id}, '${course.title}', '${course.description}')">Edit</button>
+            `;
+        });
+    }
+
+    async function deleteCourse(id) {
+        if (confirm("Are you sure you want to delete this course?")) {
+            await fetch('/courses/' + id, {
+                method: 'DELETE'
+            });
+            loadCourses();
+        }
+    }
+
+    async function editCourse(id, currentTitle, currentDescription) {
+        const newTitle = prompt("Enter new title:", currentTitle);
+        if (newTitle === null) return;
+
+        const newDescription = prompt("Enter new description:", currentDescription);
+        if (newDescription === null) return;
+
+        const updatedCourse = {
+            title: newTitle,
+            description: newDescription
+        };
+
+        await fetch('/courses/' + id, {
+            method: 'PUT',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(updatedCourse)
+        });
+
+        loadCourses();
+    }
+
+    loadCourses();
+</script>
+
+</body>
+</html>

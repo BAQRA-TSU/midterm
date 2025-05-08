@@ -2,11 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Add Student</title>
+    <title id="page-title">Add Student</title>
 </head>
 <body>
 
-<h1>Add Student</h1>
+<h1 id="add-student"></h1>
 
 <form id="studentForm">
     Name: <input type="text" id="name" required><br><br>
@@ -21,6 +21,8 @@
 <form action="/logout" method="POST">
     <button type="submit">Logout</button>
 </form>
+<button onclick="loadLang('en')">English</button>
+<button onclick="loadLang('ka')">ქართული</button>
 
 <script>
     document.getElementById('studentForm').addEventListener('submit', async (e) => {
@@ -39,6 +41,21 @@
         alert('Student added!');
         document.getElementById('studentForm').reset();
     });
+
+    function loadLang(lang) {
+        fetch('/api/lang/' + lang)
+            .then(res => res.json())
+            .then(data => {
+                document.getElementById('page-title').innerText = data["page.title"];
+                document.getElementById('add-student').innerText = data["add.student"];
+                document.getElementById('welcome-text').innerText = data["welcome"];
+            });
+    }
+
+    // Load default language on page load
+    window.onload = function () {
+        loadLang('en');
+    };
 </script>
 
 </body>

@@ -33,7 +33,6 @@ public class SecurityConfig {
                 )
                 .authorizeHttpRequests(auth -> auth
                         .requestMatchers("/css/**", "/js/**", "/images/**", "/login.html", "/error").permitAll() // Allow static files and login page
-                        .requestMatchers("/index.html").authenticated() // Restrict access to index.html (requires authentication)
                         .anyRequest().authenticated() // Require authentication for other URLs
                 )
                 .formLogin(form -> form

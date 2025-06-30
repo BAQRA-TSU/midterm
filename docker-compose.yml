@@ -1,0 +1,17 @@
+version: '3.8'
+services:
+  stugement-app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8080:8080"
+    environment:
+      - SPRING_PROFILES_ACTIVE=prod
+    restart: unless-stopped
+    networks:
+      - stugement-network
+
+networks:
+  stugement-network:
+    driver: bridge

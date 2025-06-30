@@ -1,0 +1,402 @@
+2025-06-30 15:55:50.655 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.2.Final
+2025-06-30 15:55:50.675 [restartedMain] INFO  g.tsu.Stugement.StugementApplication - Starting StugementApplication using Java 21.0.5 with PID 22899 (/Users/levanbakradzePF/Desktop/Projects/midterm/target/classes started by levanbakradzePF in /Users/levanbakradzePF/Desktop/Projects/midterm)
+2025-06-30 15:55:50.676 [restartedMain] INFO  g.tsu.Stugement.StugementApplication - No active profile set, falling back to 1 default profile: "default"
+2025-06-30 15:55:50.693 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-06-30 15:55:50.694 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-06-30 15:55:51.199 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-06-30 15:55:51.221 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 17 ms. Found 2 JPA repository interfaces.
+2025-06-30 15:55:51.618 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-06-30 15:55:51.626 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-06-30 15:55:51.627 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-06-30 15:55:51.627 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.40]
+2025-06-30 15:55:51.646 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-06-30 15:55:51.646 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 952 ms
+2025-06-30 15:55:51.794 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-06-30 15:55:51.823 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.13.Final
+2025-06-30 15:55:51.842 [restartedMain] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-06-30 15:55:51.974 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-06-30 15:55:51.988 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-06-30 15:55:52.116 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:file:./data/stugement-db user=SA
+2025-06-30 15:55:52.117 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-06-30 15:55:52.151 [restartedMain] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-06-30 15:55:52.569 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-30 15:55:52.591 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-06-30 15:55:52.749 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-06-30 15:55:52.765 [restartedMain] INFO  g.t.Stugement.config.SecurityConfig - Configuring in-memory user details service
+2025-06-30 15:55:52.870 [restartedMain] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name userDetailsService
+2025-06-30 15:55:52.912 [restartedMain] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+2025-06-30 15:55:53.100 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint beneath base path '/actuator'
+2025-06-30 15:55:53.502 [restartedMain] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./data/stugement-db'
+2025-06-30 15:55:53.582 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-06-30 15:55:53.646 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-06-30 15:55:53.664 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-06-30 15:55:53.675 [restartedMain] INFO  g.tsu.Stugement.StugementApplication - Started StugementApplication in 3.172 seconds (process running for 3.605)
+2025-06-30 15:55:53.794 [RMI TCP Connection(4)-192.168.31.206] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-06-30 15:55:53.795 [RMI TCP Connection(4)-192.168.31.206] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-06-30 15:55:53.796 [RMI TCP Connection(4)-192.168.31.206] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-06-30 15:58:09.300 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-06-30 15:58:09.316 [Thread-6] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-06-30 15:58:09.321 [tomcat-shutdown] INFO  o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8080"]
+2025-06-30 15:58:09.325 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-06-30 15:58:09.326 [Thread-6] INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
+2025-06-30 15:58:09.335 [Thread-6] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-06-30 15:58:09.344 [Thread-6] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-06-30 15:58:09.443 [Thread-6] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-06-30 15:58:09.531 [restartedMain] INFO  g.tsu.Stugement.StugementApplication - Starting StugementApplication using Java 21.0.5 with PID 22899 (/Users/levanbakradzePF/Desktop/Projects/midterm/target/classes started by levanbakradzePF in /Users/levanbakradzePF/Desktop/Projects/midterm)
+2025-06-30 15:58:09.531 [restartedMain] INFO  g.tsu.Stugement.StugementApplication - No active profile set, falling back to 1 default profile: "default"
+2025-06-30 15:58:09.657 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-06-30 15:58:09.661 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 3 ms. Found 2 JPA repository interfaces.
+2025-06-30 15:58:09.749 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-06-30 15:58:09.749 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-06-30 15:58:09.749 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-06-30 15:58:09.749 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.40]
+2025-06-30 15:58:09.755 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-06-30 15:58:09.755 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 223 ms
+2025-06-30 15:58:09.814 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-06-30 15:58:09.815 [restartedMain] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-06-30 15:58:09.820 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-06-30 15:58:09.820 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Starting...
+2025-06-30 15:58:09.823 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-2 - Added connection conn10: url=jdbc:h2:file:./data/stugement-db user=SA
+2025-06-30 15:58:09.823 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Start completed.
+2025-06-30 15:58:09.824 [restartedMain] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-2)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-06-30 15:58:09.847 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-30 15:58:09.848 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-06-30 15:58:09.894 [restartedMain] INFO  g.t.S.controller.StudentController - StudentController initialized
+2025-06-30 15:58:09.908 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-06-30 15:58:09.919 [restartedMain] INFO  g.t.Stugement.config.SecurityConfig - Configuring in-memory user details service
+2025-06-30 15:58:10.014 [restartedMain] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name userDetailsService
+2025-06-30 15:58:10.024 [restartedMain] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+2025-06-30 15:58:10.118 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint beneath base path '/actuator'
+2025-06-30 15:58:10.272 [restartedMain] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./data/stugement-db'
+2025-06-30 15:58:10.286 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-06-30 15:58:10.298 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-06-30 15:58:10.299 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-06-30 15:58:10.304 [restartedMain] INFO  g.tsu.Stugement.StugementApplication - Started StugementApplication in 0.79 seconds (process running for 140.233)
+2025-06-30 15:58:10.305 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2025-06-30 15:58:28.241 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-06-30 15:58:28.248 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-06-30 15:58:28.259 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 11 ms
+2025-06-30 15:58:28.345 [http-nio-8080-exec-1] INFO  g.t.S.controller.StudentController - Creating new student with name: Giorgi Giorgadze
+2025-06-30 15:58:28.390 [http-nio-8080-exec-1] INFO  g.t.S.controller.StudentController - Created student with ID: 3
+2025-06-30 16:02:17.099 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-06-30 16:02:17.108 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-06-30 16:02:17.116 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-06-30 16:02:17.118 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown initiated...
+2025-06-30 16:02:17.123 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown completed.
+2025-06-30 16:02:42.105 [main] INFO  g.t.S.controller.StudentController - StudentController initialized
+2025-06-30 16:02:42.122 [main] INFO  g.t.S.controller.StudentController - Attempting to update student with ID: 1
+2025-06-30 16:02:42.124 [main] INFO  g.t.S.controller.StudentController - Successfully updated student with ID: 1
+2025-06-30 16:02:42.133 [main] INFO  g.t.S.controller.StudentController - StudentController initialized
+2025-06-30 16:02:42.134 [main] INFO  g.t.S.controller.StudentController - Retrieving all students
+2025-06-30 16:02:42.134 [main] INFO  g.t.S.controller.StudentController - Found 1 students
+2025-06-30 16:02:42.136 [main] INFO  g.t.S.controller.StudentController - StudentController initialized
+2025-06-30 16:02:42.136 [main] INFO  g.t.S.controller.StudentController - Creating new student with name: John Doe
+2025-06-30 16:02:42.136 [main] INFO  g.t.S.controller.StudentController - Created student with ID: 1
+2025-06-30 16:02:42.138 [main] INFO  g.t.S.controller.StudentController - StudentController initialized
+2025-06-30 16:02:42.139 [main] INFO  g.t.S.controller.StudentController - Attempting to update student with ID: 1
+2025-06-30 16:02:42.139 [main] ERROR g.t.S.controller.StudentController - Student not found with ID: 1
+2025-06-30 16:02:42.140 [main] INFO  g.t.S.controller.StudentController - StudentController initialized
+2025-06-30 16:02:42.142 [main] INFO  g.t.S.controller.StudentController - Attempting to delete student with ID: 1
+2025-06-30 16:02:42.142 [main] INFO  g.t.S.controller.StudentController - Successfully deleted student with ID: 1
+2025-06-30 16:04:22.116 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.2.Final
+2025-06-30 16:04:22.141 [restartedMain] INFO  g.tsu.Stugement.StugementApplication - Starting StugementApplication using Java 21.0.5 with PID 23486 (/Users/levanbakradzePF/Desktop/Projects/midterm/target/classes started by levanbakradzePF in /Users/levanbakradzePF/Desktop/Projects/midterm)
+2025-06-30 16:04:22.141 [restartedMain] INFO  g.tsu.Stugement.StugementApplication - No active profile set, falling back to 1 default profile: "default"
+2025-06-30 16:04:22.171 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-06-30 16:04:22.171 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-06-30 16:04:22.799 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-06-30 16:04:22.826 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 21 ms. Found 2 JPA repository interfaces.
+2025-06-30 16:04:23.221 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-06-30 16:04:23.227 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-06-30 16:04:23.227 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-06-30 16:04:23.227 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.40]
+2025-06-30 16:04:23.243 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-06-30 16:04:23.244 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1071 ms
+2025-06-30 16:04:23.392 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-06-30 16:04:23.426 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.13.Final
+2025-06-30 16:04:23.448 [restartedMain] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-06-30 16:04:23.595 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-06-30 16:04:23.613 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-06-30 16:04:23.750 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:file:./data/stugement-db user=SA
+2025-06-30 16:04:23.752 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-06-30 16:04:23.783 [restartedMain] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-06-30 16:04:24.212 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-30 16:04:24.236 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-06-30 16:04:24.369 [restartedMain] INFO  g.t.S.controller.StudentController - StudentController initialized
+2025-06-30 16:04:24.402 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-06-30 16:04:24.424 [restartedMain] INFO  g.t.Stugement.config.SecurityConfig - Configuring in-memory user details service
+2025-06-30 16:04:24.532 [restartedMain] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name userDetailsService
+2025-06-30 16:04:24.598 [restartedMain] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+2025-06-30 16:04:24.790 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint beneath base path '/actuator'
+2025-06-30 16:04:25.047 [restartedMain] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./data/stugement-db'
+2025-06-30 16:04:25.070 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-06-30 16:04:25.099 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-06-30 16:04:25.109 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-06-30 16:04:25.121 [restartedMain] INFO  g.tsu.Stugement.StugementApplication - Started StugementApplication in 3.205 seconds (process running for 3.759)
+2025-06-30 16:04:25.615 [RMI TCP Connection(1)-192.168.31.206] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-06-30 16:04:25.615 [RMI TCP Connection(1)-192.168.31.206] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-06-30 16:04:25.616 [RMI TCP Connection(1)-192.168.31.206] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-06-30 16:04:42.350 [http-nio-8080-exec-1] INFO  g.t.S.controller.StudentController - Retrieving all students
+2025-06-30 16:04:42.499 [http-nio-8080-exec-1] INFO  g.t.S.controller.StudentController - Found 3 students
+2025-06-30 16:12:04.091 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 3 class path changes (2 additions, 0 deletions, 1 modification)
+2025-06-30 16:12:04.131 [Thread-6] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-06-30 16:12:04.136 [tomcat-shutdown] INFO  o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8080"]
+2025-06-30 16:12:04.141 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-06-30 16:12:04.142 [Thread-6] INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
+2025-06-30 16:12:04.164 [Thread-6] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-06-30 16:12:04.174 [Thread-6] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-06-30 16:12:04.196 [Thread-6] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-06-30 16:12:04.320 [restartedMain] INFO  g.tsu.Stugement.StugementApplication - Starting StugementApplication using Java 21.0.5 with PID 23486 (/Users/levanbakradzePF/Desktop/Projects/midterm/target/classes started by levanbakradzePF in /Users/levanbakradzePF/Desktop/Projects/midterm)
+2025-06-30 16:12:04.320 [restartedMain] INFO  g.tsu.Stugement.StugementApplication - No active profile set, falling back to 1 default profile: "default"
+2025-06-30 16:12:04.504 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-06-30 16:12:04.508 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 3 ms. Found 2 JPA repository interfaces.
+2025-06-30 16:12:04.612 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-06-30 16:12:04.612 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-06-30 16:12:04.612 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-06-30 16:12:04.612 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.40]
+2025-06-30 16:12:04.617 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-06-30 16:12:04.618 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 297 ms
+2025-06-30 16:12:04.698 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-06-30 16:12:04.699 [restartedMain] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-06-30 16:12:04.705 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-06-30 16:12:04.705 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Starting...
+2025-06-30 16:12:04.709 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-2 - Added connection conn10: url=jdbc:h2:file:./data/stugement-db user=SA
+2025-06-30 16:12:04.709 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Start completed.
+2025-06-30 16:12:04.709 [restartedMain] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-2)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-06-30 16:12:04.736 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-30 16:12:04.737 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-06-30 16:12:04.789 [restartedMain] INFO  g.t.S.controller.StudentController - StudentController initialized
+2025-06-30 16:12:04.807 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-06-30 16:12:04.820 [restartedMain] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration': Unsatisfied dependency expressed through field 'httpSecurity': Error creating bean with name 'org.springframework.security.config.annotation.web.configuration.HttpSecurityConfiguration.httpSecurity' defined in class path resource [org/springframework/security/config/annotation/web/configuration/HttpSecurityConfiguration.class]: Failed to instantiate [org.springframework.security.config.annotation.web.builders.HttpSecurity]: Factory method 'httpSecurity' threw exception with message: Error creating bean with name 'userDetailsService' defined in class path resource [ge/tsu/Stugement/config/SecurityConfig.class]: Unsatisfied dependency expressed through method 'userDetailsService' parameter 0: No qualifying bean of type 'org.springframework.security.crypto.password.PasswordEncoder' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2025-06-30 16:12:04.820 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-06-30 16:12:04.820 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown initiated...
+2025-06-30 16:12:04.850 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown completed.
+2025-06-30 16:12:04.850 [restartedMain] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2025-06-30 16:12:04.857 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-06-30 16:12:04.869 [restartedMain] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of method userDetailsService in ge.tsu.Stugement.config.SecurityConfig required a bean of type 'org.springframework.security.crypto.password.PasswordEncoder' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=false)
+
+
+Action:
+
+Consider defining a bean of type 'org.springframework.security.crypto.password.PasswordEncoder' in your configuration.
+
+2025-06-30 16:15:12.214 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.2.Final
+2025-06-30 16:15:12.236 [restartedMain] INFO  g.tsu.Stugement.StugementApplication - Starting StugementApplication using Java 21.0.5 with PID 24246 (/Users/levanbakradzePF/Desktop/Projects/midterm/target/classes started by levanbakradzePF in /Users/levanbakradzePF/Desktop/Projects/midterm)
+2025-06-30 16:15:12.237 [restartedMain] INFO  g.tsu.Stugement.StugementApplication - No active profile set, falling back to 1 default profile: "default"
+2025-06-30 16:15:12.261 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-06-30 16:15:12.261 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-06-30 16:15:12.816 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-06-30 16:15:12.844 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 22 ms. Found 2 JPA repository interfaces.
+2025-06-30 16:15:13.246 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-06-30 16:15:13.254 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-06-30 16:15:13.255 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-06-30 16:15:13.255 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.40]
+2025-06-30 16:15:13.273 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-06-30 16:15:13.273 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1012 ms
+2025-06-30 16:15:13.459 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-06-30 16:15:13.498 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.13.Final
+2025-06-30 16:15:13.517 [restartedMain] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-06-30 16:15:13.670 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-06-30 16:15:13.697 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-06-30 16:15:13.895 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:file:./data/stugement-db user=SA
+2025-06-30 16:15:13.896 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-06-30 16:15:13.930 [restartedMain] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-06-30 16:15:14.363 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-30 16:15:14.386 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-06-30 16:15:14.532 [restartedMain] INFO  g.t.S.controller.StudentController - StudentController initialized
+2025-06-30 16:15:14.568 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-06-30 16:15:14.587 [restartedMain] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration': Unsatisfied dependency expressed through field 'httpSecurity': Error creating bean with name 'org.springframework.security.config.annotation.web.configuration.HttpSecurityConfiguration.httpSecurity' defined in class path resource [org/springframework/security/config/annotation/web/configuration/HttpSecurityConfiguration.class]: Failed to instantiate [org.springframework.security.config.annotation.web.builders.HttpSecurity]: Factory method 'httpSecurity' threw exception with message: Error creating bean with name 'userDetailsService' defined in class path resource [ge/tsu/Stugement/config/SecurityConfig.class]: Unsatisfied dependency expressed through method 'userDetailsService' parameter 0: No qualifying bean of type 'org.springframework.security.crypto.password.PasswordEncoder' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2025-06-30 16:15:14.587 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-06-30 16:15:14.589 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-06-30 16:15:14.663 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-06-30 16:15:14.666 [restartedMain] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2025-06-30 16:15:14.679 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-06-30 16:15:14.690 [restartedMain] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of method userDetailsService in ge.tsu.Stugement.config.SecurityConfig required a bean of type 'org.springframework.security.crypto.password.PasswordEncoder' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=false)
+
+
+Action:
+
+Consider defining a bean of type 'org.springframework.security.crypto.password.PasswordEncoder' in your configuration.
+
+2025-06-30 16:16:04.197 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.2.Final
+2025-06-30 16:16:04.218 [restartedMain] INFO  g.tsu.Stugement.StugementApplication - Starting StugementApplication using Java 21.0.5 with PID 24317 (/Users/levanbakradzePF/Desktop/Projects/midterm/target/classes started by levanbakradzePF in /Users/levanbakradzePF/Desktop/Projects/midterm)
+2025-06-30 16:16:04.218 [restartedMain] INFO  g.tsu.Stugement.StugementApplication - No active profile set, falling back to 1 default profile: "default"
+2025-06-30 16:16:04.237 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-06-30 16:16:04.237 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-06-30 16:16:04.756 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-06-30 16:16:04.782 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 20 ms. Found 2 JPA repository interfaces.
+2025-06-30 16:16:05.164 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-06-30 16:16:05.170 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-06-30 16:16:05.171 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-06-30 16:16:05.171 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.40]
+2025-06-30 16:16:05.187 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-06-30 16:16:05.187 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 950 ms
+2025-06-30 16:16:05.346 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-06-30 16:16:05.374 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.13.Final
+2025-06-30 16:16:05.395 [restartedMain] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-06-30 16:16:05.527 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-06-30 16:16:05.541 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-06-30 16:16:05.672 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:file:./data/stugement-db user=SA
+2025-06-30 16:16:05.673 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-06-30 16:16:05.703 [restartedMain] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-06-30 16:16:06.122 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-30 16:16:06.144 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-06-30 16:16:06.274 [restartedMain] INFO  g.t.S.controller.StudentController - StudentController initialized
+2025-06-30 16:16:06.302 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-06-30 16:16:06.316 [restartedMain] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration': Unsatisfied dependency expressed through field 'httpSecurity': Error creating bean with name 'org.springframework.security.config.annotation.web.configuration.HttpSecurityConfiguration.httpSecurity' defined in class path resource [org/springframework/security/config/annotation/web/configuration/HttpSecurityConfiguration.class]: Failed to instantiate [org.springframework.security.config.annotation.web.builders.HttpSecurity]: Factory method 'httpSecurity' threw exception with message: Error creating bean with name 'userDetailsService' defined in class path resource [ge/tsu/Stugement/config/SecurityConfig.class]: Unsatisfied dependency expressed through method 'userDetailsService' parameter 0: No qualifying bean of type 'org.springframework.security.crypto.password.PasswordEncoder' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2025-06-30 16:16:06.317 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-06-30 16:16:06.318 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-06-30 16:16:06.527 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-06-30 16:16:06.529 [restartedMain] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2025-06-30 16:16:06.543 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-06-30 16:16:06.556 [restartedMain] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of method userDetailsService in ge.tsu.Stugement.config.SecurityConfig required a bean of type 'org.springframework.security.crypto.password.PasswordEncoder' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=false)
+
+
+Action:
+
+Consider defining a bean of type 'org.springframework.security.crypto.password.PasswordEncoder' in your configuration.
+
+2025-06-30 16:18:57.876 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.2.Final
+2025-06-30 16:18:57.898 [restartedMain] INFO  g.tsu.Stugement.StugementApplication - Starting StugementApplication using Java 21.0.5 with PID 24566 (/Users/levanbakradzePF/Desktop/Projects/midterm/target/classes started by levanbakradzePF in /Users/levanbakradzePF/Desktop/Projects/midterm)
+2025-06-30 16:18:57.898 [restartedMain] INFO  g.tsu.Stugement.StugementApplication - No active profile set, falling back to 1 default profile: "default"
+2025-06-30 16:18:57.917 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-06-30 16:18:57.917 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-06-30 16:18:58.404 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-06-30 16:18:58.430 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 20 ms. Found 2 JPA repository interfaces.
+2025-06-30 16:18:58.833 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-06-30 16:18:58.839 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-06-30 16:18:58.840 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-06-30 16:18:58.840 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.40]
+2025-06-30 16:18:58.857 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-06-30 16:18:58.858 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 941 ms
+2025-06-30 16:18:59.010 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-06-30 16:18:59.043 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.13.Final
+2025-06-30 16:18:59.062 [restartedMain] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-06-30 16:18:59.194 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-06-30 16:18:59.210 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-06-30 16:18:59.329 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:file:./data/stugement-db user=SA
+2025-06-30 16:18:59.330 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-06-30 16:18:59.361 [restartedMain] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-06-30 16:18:59.779 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-30 16:18:59.801 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-06-30 16:18:59.930 [restartedMain] INFO  g.t.S.controller.StudentController - StudentController initialized
+2025-06-30 16:18:59.959 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-06-30 16:18:59.974 [restartedMain] INFO  g.t.Stugement.config.SecurityConfig - Configuring in-memory user details service
+2025-06-30 16:19:00.076 [restartedMain] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name userDetailsService
+2025-06-30 16:19:00.119 [restartedMain] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+2025-06-30 16:19:00.297 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint beneath base path '/actuator'
+2025-06-30 16:19:00.551 [restartedMain] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./data/stugement-db'
+2025-06-30 16:19:00.576 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-06-30 16:19:00.608 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-06-30 16:19:00.619 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-06-30 16:19:00.628 [restartedMain] INFO  g.tsu.Stugement.StugementApplication - Started StugementApplication in 2.909 seconds (process running for 3.318)
+2025-06-30 16:19:01.011 [RMI TCP Connection(3)-192.168.31.206] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-06-30 16:19:01.011 [RMI TCP Connection(3)-192.168.31.206] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-06-30 16:19:01.012 [RMI TCP Connection(3)-192.168.31.206] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-06-30 16:28:26.697 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-06-30 16:28:26.710 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-06-30 16:28:26.727 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-06-30 16:28:26.748 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-06-30 16:28:26.752 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-06-30 17:01:09.593 [main] INFO  g.t.S.controller.StudentController - StudentController initialized
+2025-06-30 17:01:09.624 [main] INFO  g.t.S.controller.StudentController - Attempting to update student with ID: 1
+2025-06-30 17:01:09.626 [main] INFO  g.t.S.controller.StudentController - Successfully updated student with ID: 1
+2025-06-30 17:01:09.646 [main] INFO  g.t.S.controller.StudentController - StudentController initialized
+2025-06-30 17:01:09.649 [main] INFO  g.t.S.controller.StudentController - Retrieving all students
+2025-06-30 17:01:09.650 [main] INFO  g.t.S.controller.StudentController - Found 1 students
+2025-06-30 17:01:09.652 [main] INFO  g.t.S.controller.StudentController - StudentController initialized
+2025-06-30 17:01:09.653 [main] INFO  g.t.S.controller.StudentController - Creating new student with name: John Doe
+2025-06-30 17:01:09.653 [main] INFO  g.t.S.controller.StudentController - Created student with ID: 1
+2025-06-30 17:01:09.655 [main] INFO  g.t.S.controller.StudentController - StudentController initialized
+2025-06-30 17:01:09.657 [main] INFO  g.t.S.controller.StudentController - Attempting to update student with ID: 1
+2025-06-30 17:01:09.657 [main] ERROR g.t.S.controller.StudentController - Student not found with ID: 1
+2025-06-30 17:01:09.661 [main] INFO  g.t.S.controller.StudentController - StudentController initialized
+2025-06-30 17:01:09.663 [main] INFO  g.t.S.controller.StudentController - Attempting to delete student with ID: 1
+2025-06-30 17:01:09.663 [main] INFO  g.t.S.controller.StudentController - Successfully deleted student with ID: 1
